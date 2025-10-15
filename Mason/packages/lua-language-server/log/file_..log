@@ -1,0 +1,355 @@
+[15:52:06.281][info] [#0:C:/Users/ldp/Dp1/Mason/packages/lua-language-server\main.lua:68]: Lua Lsp startup, root: 	C:/Users/ldp/Dp1/Mason/packages/lua-language-server
+[15:52:06.281][info] [#0:C:/Users/ldp/Dp1/Mason/packages/lua-language-server\main.lua:69]: ROOT:	C:/Users/ldp/Dp1/Mason/packages/lua-language-server
+[15:52:06.281][info] [#0:C:/Users/ldp/Dp1/Mason/packages/lua-language-server\main.lua:70]: LOGPATH:	C:/Users/ldp/Dp1/Mason/packages/lua-language-server/log
+[15:52:06.281][info] [#0:C:/Users/ldp/Dp1/Mason/packages/lua-language-server\main.lua:71]: METAPATH:	C:/Users/ldp/Dp1/Mason/packages/lua-language-server/meta
+[15:52:06.282][info] [#0:C:/Users/ldp/Dp1/Mason/packages/lua-language-server\main.lua:72]: VERSION:	3.15.0
+[15:52:06.306][info] [#0:script\proto\proto.lua:260]: Listen Mode: stdio
+[15:52:06.306][info] [#0:script\service\service.lua:145]: 
+========= Medical Examination Report =========
+    --------------- Memory ---------------
+        Total: 2.264 MB
+        # 00 : 2.263 MB
+        # 01 : 0.000 MB
+        # 02 : 0.000 MB
+        # 03 : 0.000 MB
+        # 04 : 0.000 MB
+    --------------- Coroutine ---------------
+        Total:     0
+        Running:   0
+        Suspended: 0
+        Normal:    0
+        Dead:      0
+    --------------- Cache ---------------
+        Total: 1
+        Dead:  0
+    ---------------  RPC  ---------------
+        Holdon:   0
+        Waiting:  0
+==============================================
+[15:52:06.424][info] [#0:script\client.lua:657]: Client init	{
+  capabilities = {
+    general = {
+      positionEncodings = { "utf-8", "utf-16", "utf-32" }
+    },
+    textDocument = {
+      callHierarchy = {
+        dynamicRegistration = false
+      },
+      codeAction = {
+        codeActionLiteralSupport = {
+          codeActionKind = {
+            valueSet = { "", "quickfix", "refactor", "refactor.extract", "refactor.inline", "refactor.rewrite", "source", "source.organizeImports" }
+          }
+        },
+        dataSupport = true,
+        dynamicRegistration = true,
+        isPreferredSupport = true,
+        resolveSupport = {
+          properties = { "edit", "command" }
+        }
+      },
+      codeLens = {
+        dynamicRegistration = false,
+        resolveSupport = {
+          properties = { "command" }
+        }
+      },
+      completion = {
+        completionItem = {
+          commitCharactersSupport = false,
+          deprecatedSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          insertReplaceSupport = true,
+          insertTextModeSupport = {
+            valueSet = { 1 }
+          },
+          labelDetailsSupport = true,
+          preselectSupport = false,
+          resolveSupport = {
+            properties = { "documentation", "detail", "additionalTextEdits", "command", "data" }
+          },
+          snippetSupport = true,
+          tagSupport = {
+            valueSet = { 1 }
+          }
+        },
+        completionItemKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25 }
+        },
+        completionList = {
+          itemDefaults = { "commitCharacters", "editRange", "insertTextFormat", "insertTextMode", "data" }
+        },
+        contextSupport = true,
+        dynamicRegistration = false,
+        insertTextMode = 1
+      },
+      declaration = {
+        linkSupport = true
+      },
+      definition = {
+        dynamicRegistration = true,
+        linkSupport = true
+      },
+      diagnostic = {
+        dynamicRegistration = false,
+        tagSupport = {
+          valueSet = { 1, 2 }
+        }
+      },
+      documentHighlight = {
+        dynamicRegistration = false
+      },
+      documentSymbol = {
+        dynamicRegistration = false,
+        hierarchicalDocumentSymbolSupport = true,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      foldingRange = {
+        dynamicRegistration = false,
+        foldingRange = {
+          collapsedText = true
+        },
+        foldingRangeKind = {
+          valueSet = { "comment", "imports", "region" }
+        },
+        lineFoldingOnly = true
+      },
+      formatting = {
+        dynamicRegistration = true
+      },
+      hover = {
+        contentFormat = { "markdown", "plaintext" },
+        dynamicRegistration = true
+      },
+      implementation = {
+        linkSupport = true
+      },
+      inlayHint = {
+        dynamicRegistration = true,
+        resolveSupport = {
+          properties = { "textEdits", "tooltip", "location", "command" }
+        }
+      },
+      publishDiagnostics = {
+        dataSupport = true,
+        relatedInformation = true,
+        tagSupport = {
+          valueSet = { 1, 2 }
+        }
+      },
+      rangeFormatting = {
+        dynamicRegistration = true,
+        rangesSupport = true
+      },
+      references = {
+        dynamicRegistration = false
+      },
+      rename = {
+        dynamicRegistration = true,
+        prepareSupport = true
+      },
+      semanticTokens = {
+        augmentsSyntaxTokens = true,
+        dynamicRegistration = false,
+        formats = { "relative" },
+        multilineTokenSupport = false,
+        overlappingTokenSupport = true,
+        requests = {
+          full = {
+            delta = true
+          },
+          range = false
+        },
+        serverCancelSupport = false,
+        tokenModifiers = { "declaration", "definition", "readonly", "static", "deprecated", "abstract", "async", "modification", "documentation", "defaultLibrary" },
+        tokenTypes = { "namespace", "type", "class", "enum", "interface", "struct", "typeParameter", "parameter", "variable", "property", "enumMember", "event", "function", "method", "macro", "keyword", "modifier", "comment", "string", "number", "regexp", "operator", "decorator" }
+      },
+      signatureHelp = {
+        dynamicRegistration = false,
+        signatureInformation = {
+          activeParameterSupport = true,
+          documentationFormat = { "markdown", "plaintext" },
+          parameterInformation = {
+            labelOffsetSupport = true
+          }
+        }
+      },
+      synchronization = {
+        didSave = true,
+        dynamicRegistration = false,
+        willSave = true,
+        willSaveWaitUntil = true
+      },
+      typeDefinition = {
+        linkSupport = true
+      }
+    },
+    window = {
+      showDocument = {
+        support = true
+      },
+      showMessage = {
+        messageActionItem = {
+          additionalPropertiesSupport = true
+        }
+      },
+      workDoneProgress = true
+    },
+    workspace = {
+      applyEdit = true,
+      configuration = true,
+      didChangeConfiguration = {
+        dynamicRegistration = false
+      },
+      didChangeWatchedFiles = {
+        dynamicRegistration = true,
+        relativePatternSupport = true
+      },
+      inlayHint = {
+        refreshSupport = true
+      },
+      semanticTokens = {
+        refreshSupport = true
+      },
+      symbol = {
+        dynamicRegistration = false,
+        symbolKind = {
+          valueSet = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26 }
+        }
+      },
+      workspaceEdit = {
+        resourceOperations = { "rename", "create", "delete" }
+      },
+      workspaceFolders = true
+    }
+  },
+  clientInfo = {
+    name = "Neovim",
+    version = "0.11.4+gcec0ecabd8"
+  },
+  processId = 16064,
+  rootPath = "/.",
+  rootUri = "file://.",
+  trace = "off",
+  workDoneToken = "1",
+  workspaceFolders = { {
+      name = ".",
+      uri = "file://."
+    } }
+}
+[15:52:06.426][info] [#0:script\language.lua:137]: VSC language: nil
+[15:52:06.426][info] [#0:script\language.lua:138]: LS  language: en-us
+[15:52:06.426][info] [#0:script\workspace\workspace.lua:38]: Workspace init root: 	file://.
+[15:52:06.426][info] [#0:script\workspace\workspace.lua:42]: Log path: 	C:/Users/ldp/Dp1/Mason/packages/lua-language-server/log/file_..log
+[15:52:06.451][info] [#0:script\workspace\workspace.lua:48]: Workspace create: 	file://.
+[15:52:06.780][warn] [#0:script\config\loader.lua:116]: No config?	{}
+[15:52:06.781][warn] [#0:script\config\loader.lua:116]: No config?	{}
+[15:52:06.886][warn] [#0:script\config\loader.lua:116]: No config?	{}
+[15:52:06.887][warn] [#0:script\config\loader.lua:116]: No config?	{}
+[15:52:06.887][info] [#0:script\provider\provider.lua:65]: Load config from client	fallback
+[15:52:06.887][info] [#0:script\provider\provider.lua:66]: nil
+[15:52:06.887][warn] [#0:script\config\loader.lua:116]: No config?	{}
+[15:52:06.887][info] [#0:script\provider\provider.lua:65]: Load config from client	fallback
+[15:52:06.887][info] [#0:script\provider\provider.lua:66]: nil
+[15:52:06.887][warn] [#0:script\config\loader.lua:116]: No config?	{}
+[15:52:06.888][info] [#0:script\provider\provider.lua:65]: Load config from client	fallback
+[15:52:06.888][info] [#0:script\provider\provider.lua:66]: nil
+[15:52:07.014][info] [#0:script\library.lua:212]: Init builtin library at:	file://.
+[15:52:07.024][info] [#0:script\library.lua:212]: Init builtin library at:	nil
+[15:52:07.137][info] [#0:script\workspace\workspace.lua:330]: Preload start:	file://.
+[15:52:07.147][info] [#0:script\workspace\workspace.lua:336]: Scan files at:	file://.
+[15:52:07.147][info] [#0:script\workspace\workspace.lua:330]: Preload start:	<fallback>
+[15:52:07.151][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[15:52:07.151][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[15:52:07.152][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[15:52:07.152][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[15:52:07.152][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[15:52:07.152][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[15:52:07.152][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[15:52:07.153][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[15:52:07.153][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[15:52:07.153][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[15:52:07.153][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[15:52:07.153][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[15:52:07.153][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[15:52:07.154][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[15:52:07.154][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[15:52:07.154][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[15:52:07.154][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[15:52:07.154][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[15:52:07.154][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[15:52:07.154][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[15:52:07.155][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[15:52:07.155][info] [#0:script\workspace\workspace.lua:359]: Scan library at:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[15:52:07.259][info] [#0:script\workspace\workspace.lua:385]: Found 11 files at:	<fallback>
+[15:52:07.259][info] [#0:script\workspace\loading.lua:160]: Load files from disk:	<fallback>
+[15:52:07.259][info] [#0:script\workspace\workspace.lua:385]: Found 11 files at:	file://.
+[15:52:07.259][info] [#0:script\workspace\loading.lua:160]: Load files from disk:	file://.
+[15:52:07.368][info] [#0:script\workspace\loading.lua:100]: Preload file at: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua , size = 2.944 KB
+[15:52:07.374][info] [#0:script\workspace\loading.lua:112]: ++++As library of:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[15:52:07.375][info] [#0:script\workspace\loading.lua:100]: Preload file at: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua , size = 5.234 KB
+[15:52:07.383][info] [#0:script\workspace\loading.lua:112]: ++++As library of:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[15:52:07.383][info] [#0:script\workspace\loading.lua:97]: Skip loaded file: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/string.lua
+[15:52:07.383][info] [#0:script\workspace\loading.lua:100]: Preload file at: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua , size = 6.364 KB
+[15:52:07.386][info] [#0:script\workspace\loading.lua:112]: ++++As library of:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[15:52:07.387][info] [#0:script\workspace\loading.lua:97]: Skip loaded file: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/io.lua
+[15:52:07.387][info] [#0:script\workspace\loading.lua:97]: Skip loaded file: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/package.lua
+[15:52:07.387][info] [#0:script\workspace\loading.lua:100]: Preload file at: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua , size = 15.841 KB
+[15:52:07.394][info] [#0:script\workspace\loading.lua:112]: ++++As library of:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[15:52:07.394][info] [#0:script\workspace\loading.lua:97]: Skip loaded file: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/basic.lua
+[15:52:07.394][info] [#0:script\workspace\loading.lua:100]: Preload file at: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua , size = 8.542 KB
+[15:52:07.397][info] [#0:script\workspace\loading.lua:112]: ++++As library of:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[15:52:07.397][info] [#0:script\workspace\loading.lua:97]: Skip loaded file: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/math.lua
+[15:52:07.397][info] [#0:script\workspace\loading.lua:100]: Preload file at: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua , size = 7.637 KB
+[15:52:07.401][info] [#0:script\workspace\loading.lua:112]: ++++As library of:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[15:52:07.401][info] [#0:script\workspace\loading.lua:97]: Skip loaded file: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/debug.lua
+[15:52:07.401][info] [#0:script\workspace\loading.lua:100]: Preload file at: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua , size = 2.386 KB
+[15:52:07.402][info] [#0:script\workspace\loading.lua:112]: ++++As library of:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[15:52:07.402][info] [#0:script\workspace\loading.lua:97]: Skip loaded file: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/utf8.lua
+[15:52:07.402][info] [#0:script\workspace\loading.lua:100]: Preload file at: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua , size = 5.611 KB
+[15:52:07.407][info] [#0:script\workspace\loading.lua:112]: ++++As library of:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[15:52:07.407][info] [#0:script\workspace\loading.lua:97]: Skip loaded file: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/os.lua
+[15:52:07.407][info] [#0:script\workspace\loading.lua:100]: Preload file at: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua , size = 0.302 KB
+[15:52:07.407][info] [#0:script\workspace\loading.lua:112]: ++++As library of:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[15:52:07.407][info] [#0:script\workspace\loading.lua:97]: Skip loaded file: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/builtin.lua
+[15:52:07.407][info] [#0:script\workspace\loading.lua:100]: Preload file at: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua , size = 2.590 KB
+[15:52:07.409][info] [#0:script\workspace\loading.lua:112]: ++++As library of:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[15:52:07.409][info] [#0:script\workspace\loading.lua:97]: Skip loaded file: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/coroutine.lua
+[15:52:07.409][info] [#0:script\workspace\loading.lua:100]: Preload file at: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua , size = 4.445 KB
+[15:52:07.411][info] [#0:script\workspace\loading.lua:112]: ++++As library of:	file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[15:52:07.411][info] [#0:script\workspace\loading.lua:97]: Skip loaded file: file:///c%3A/Users/ldp/Dp1/Mason/packages/lua-language-server/meta/Lua%205.4%20en-us%20utf8/table.lua
+[15:52:07.522][info] [#0:script\workspace\loading.lua:172]: Loaded files takes [0.263] sec: <fallback>
+[15:52:07.522][info] [#0:script\workspace\loading.lua:181]: Compile files takes [0.000] sec: <fallback>
+[15:52:07.522][info] [#0:script\workspace\loading.lua:182]: Loaded finish:	<fallback>
+[15:52:07.522][info] [#0:script\workspace\workspace.lua:387]: Preload finish at:	<fallback>
+[15:52:07.530][info] [#0:script\workspace\loading.lua:172]: Loaded files takes [0.271] sec: file://.
+[15:52:07.530][info] [#0:script\workspace\loading.lua:181]: Compile files takes [0.000] sec: file://.
+[15:52:07.530][info] [#0:script\workspace\loading.lua:182]: Loaded finish:	file://.
+[15:52:07.530][info] [#0:script\workspace\workspace.lua:387]: Preload finish at:	file://.
+[15:52:07.531][warn] [#0:script\proto\proto.lua:189]: Method [textDocument/didOpen] takes [0.859]sec. {
+  jsonrpc = "2.0",
+  method = "textDocument/didOpen",
+  params = {
+    textDocument = {
+      languageId = "lua",
+      text = '"***"',
+      uri = "diffview://C:/Users/ldp/Dp1/lazy/nvim1/.git/:0:/leader/leader_g/lua/leader_g.lua",
+      version = 0
+    }
+  }
+}
+[15:52:07.533][info] [#0:script\provider\diagnostic.lua:560]: Diagnostics scope [file://.], files count:[11]
+[15:52:07.542][warn] [#0:script\proto\proto.lua:189]: Method [textDocument/semanticTokens/full] takes [0.510]sec. {
+  id = 6,
+  jsonrpc = "2.0",
+  method = "textDocument/semanticTokens/full",
+  params = {
+    textDocument = {
+      uri = "diffview://C:/Users/ldp/Dp1/lazy/nvim1/.git/:0:/leader/leader_g/lua/leader_g.lua"
+    }
+  }
+}
+[15:52:07.543][info] [#0:script\provider\diagnostic.lua:577]: Diagnostics scope [file://.] finished, takes [0.010] sec.
+[15:53:50.070][warn] [#0:script\pub\report.lua:24]: Load proto error:	Disconnected!
